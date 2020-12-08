@@ -1,0 +1,159 @@
+INFO:    AUTOSTARTUP MODE = 1  
+NOTICE:  Booting Trusted Firmware
+NOTICE:  BL1: v1.3(release):f26889a
+NOTICE:  BL1: Built : 13:04:48, Jul 30 2018
+INFO:    BL1: RAM 0x30200000 - 0x30209000
+INFO:    Using crypto library 'STM ATF Mini Certificates Crypto Library'
+INFO:    BL1: Searching FIP image
+INFO:    search_fip start,  slot: 0
+INFO:    search_fip end,  slot: 0, result: 0
+INFO:    VALID code at slot 0 ref_ctr 0x5555 (21845)
+INFO:    search_fip start,  slot: 1
+INFO:    search_fip end,  slot: 1, result: 0
+INFO:    VALID code at slot 1 ref_ctr 0x5555 (21845)
+INFO:    search_fip start,  slot: 2
+INFO:    search_fip end,  slot: 2, result: 0
+INFO:    VALID code at slot 2 ref_ctr 0x5555 (21845)
+INFO:    search_fip start,  slot: 3
+INFO:    search_fip end,  slot: 3, result: 0
+INFO:    VALID code at slot 3 ref_ctr 0x5555 (21845)
+INFO:    search_fip start,  slot: 4
+INFO:    search_fip end,  slot: 4, result: 0
+INFO:    TERM code at slot 4
+INFO:    Chosen slot = 3
+INFO:    BL1: Get the image descriptor
+INFO:    BL1: Loading BL2
+INFO:    Loading image id=6 at address 0x30209000
+INFO:    Skip reserving region [base = 0x30209000, size = 0x90]
+INFO:    Image id=6 loaded at address 0x30209000, size = 0x90
+INFO:    cert_nv_ctr : 1
+INFO:    plat_nv_ctr : 0
+INFO:    Loading image id=1 at address 0x30209000
+INFO:    Image id=1 loaded at address 0x30209000, size = 0xf178
+NOTICE:  BL1: Booting BL2
+INFO:    Entry point address = 0x30209000
+NOTICE:  BL20: v1.3(debug):25afa823
+NOTICE:  BL20: Built : 16:55:25, Jul 17 2020
+NOTICE:  EMMC boot counter is 47
+NOTICE:  BL2: v1.3(debug):4ac84b3
+NOTICE:  BL2: Built : 15:39:21, Oct 15 2020
+NOTICE:  Evaluate 0x8110010 & 0x10 == 0x0 -> 0
+NOTICE:  Using default targetpack config
+Boot firmware v20190415-1 starting
+!*:#)$<@[|{!!("!%5!#!!"O-#A!!!"
+Boot firmware exiting normally
+NOTICE:  BL2: end TP
+NNOTICE:  BL31: v1.3(debug):4ac84b3
+NOTICE:  BL31: Built : 15:39:24, Oct 15 2020
+
+
+U-Boot 2016.05-00307-g16c388c (Jul 23 2020 - 22:19:05 +0000)
+
+DRAM:  1004 MiB
+MMC:   Fast boot:eMMC: 8xbit - div2
+stm-sdhci0: 0
+Using default environment
+
+In:    nulldev
+Out:   serial
+Err:   serial
+CPU ID: 0x00020100 0x09011015 0xb925838d
+Detected Board rev: #rev1_pre_production
+sdhci_transfer_data: Error detected in status(0x208000)!
+sdhci_transfer_data: Error detected in status(0x208000)!
+FIP1: 3 FIP2: 3
+BOOT SLOT B
+Net:   Net Initialization Skipped
+No ethernet found.
+
+                                                          *
+                                                 +         
+                                       +    +              
+                                +     +                    
+                           +      +                        
++ + + + +              +     +                             
+  +        +       +     +                                 
+     +       + +      +                                    
+        +   +      +                                       
+          +      + +                                       
+      +      +        +                                    
+   +       +    +        +                                 
+ +       +         +        +                              
++ + + + +             + + + + +                            
+
+Board: SPACEX CATSON UTERM
+
+Is production hardware? YES
+======================================
+= Type 'falcon' to stop boot process =
+======================================
+sdhci_transfer_data: Error detected in status(0x208000)!
+sdhci_transfer_data: Error detected in status(0x208000)!
+switch to partitions #0, OK
+mmc0(part 0) is current device
+
+MMC read: dev # 0, block # 98304, count 49152 ... 49152 blocks read: OK
+## Loading kernel from FIT Image at a2000000 ...
+   Using 'rev1_pre_production@1' configuration
+   Verifying Hash Integrity ... sha256,rsa2048:dev+ OK
+   Trying 'kernel@1' kernel subimage
+     Description:  compressed kernel
+     Created:      2020-10-15  15:40:21 UTC
+     Type:         Kernel Image
+     Compression:  lzma compressed
+     Data Start:   0xa20000dc
+     Data Size:    2620262 Bytes = 2.5 MiB
+     Architecture: AArch64
+     OS:           Linux
+     Load Address: 0x80080000
+     Load Size:    unavailable
+     Entry Point:  0x80080000
+     Hash algo:    sha256
+     Hash value:   2eee092ccbd4a45f7d73aa1786d28994a60a615b7e967f7508e956a776bfe2bc
+   Verifying Hash Integrity ... sha256+ OK
+## Loading ramdisk from FIT Image at a2000000 ...
+   Using 'rev1_pre_production@1' configuration
+   Trying 'ramdisk@1' ramdisk subimage
+     Description:  compressed ramdisk
+     Created:      2020-10-15  15:40:21 UTC
+     Type:         RAMDisk Image
+     Compression:  lzma compressed
+     Data Start:   0xa23139d4
+     Data Size:    5474268 Bytes = 5.2 MiB
+     Architecture: AArch64
+     OS:           Linux
+     Load Address: 0xb0000000
+     Load Size:    unavailable
+     Entry Point:  0xb0000000
+     Hash algo:    sha256
+     Hash value:   1bece01a0ad3c63206f24f6ad7cad6f3ff023469907c202c8fc97eb5fdae57b2
+   Verifying Hash Integrity ... sha256+ OK
+   Loading ramdisk from 0xa23139d4 to 0xb0000000
+## Loading fdt from FIT Image at a2000000 ...
+   Using 'rev1_pre_production@1' configuration
+   Trying 'rev1_pre_production_fdt@1' fdt subimage
+     Description:  rev1 pre production device tree
+     Created:      2020-10-15  15:40:21 UTC
+     Type:         Flat Device Tree
+     Compression:  uncompressed
+     Data Start:   0xa22d8650
+     Data Size:    60328 Bytes = 58.9 KiB
+     Architecture: AArch64
+     Hash algo:    sha256
+     Hash value:   b30932fd6e42c20720ae6a862da9df0a5b5849f26b1bd8ddafd96cb9759a2922
+   Verifying Hash Integrity ... sha256+ OK
+   Loading fdt from 0xa22d8650 to 0x8f000000
+   Booting using the fdt blob at 0x8f000000
+   Uncompressing Kernel Image ... OK
+   Loading Ramdisk to 8fac7000, end 8ffff7dc ... OK
+   Loading Device Tree to 000000008fab5000, end 000000008fac6ba7 ... OK
+WARNING: ethact is not set. Not including ethprime in /chosen.
+
+Starting kernel ...
+
+[    3.358708] st-sfc-revc 1e302000.spisfc: Unrecognized READID [00 00 00 00 00 00]
+
+Development login enabled: no
+
+SpaceX User Terminal.
+user1 login: 
