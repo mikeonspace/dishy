@@ -34,7 +34,7 @@ NOTICE:  BL1: Booting BL2
 INFO:    Entry point address = 0x30209000
 NOTICE:  BL20: v1.3(debug):25afa823
 NOTICE:  BL20: Built : 16:55:25, Jul 17 2020
-NOTICE:  EMMC boot counter is 47
+NOTICE:  EMMC boot counter is 59
 NOTICE:  BL2: v1.3(debug):4ac84b3
 NOTICE:  BL2: Built : 15:39:21, Oct 15 2020
 NOTICE:  Evaluate 0x8110010 & 0x10 == 0x0 -> 0
@@ -151,7 +151,7 @@ WARNING: ethact is not set. Not including ethprime in /chosen.
 
 Starting kernel ...
 
-[    3.358708] st-sfc-revc 1e302000.spisfc: Unrecognized READID [00 00 00 00 00 00]
+[    3.353779] st-sfc-revc 1e302000.spisfc: Unrecognized READID [00 00 00 00 00 00]
 
 Development login enabled: no
 
